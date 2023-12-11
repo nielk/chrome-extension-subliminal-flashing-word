@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Subliminal Positive Word",
+    "description": "Science based way to display some positives words on the web pages you visit",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": ["run.js"],
+            "matches": [
+                "https://*/*",
+                "https://*/"
+            ]
+        }
+    ],
+    "permissions": ["activeTab", "scripting"]
+  }
